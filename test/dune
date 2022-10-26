@@ -1,0 +1,3 @@
+(test
+ (name atd_example)
+ (libraries core yojson atdgen))

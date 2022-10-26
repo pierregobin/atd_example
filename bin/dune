@@ -1,0 +1,17 @@
+(executable
+ (public_name atd_example)
+ (name main)
+ (libraries atd_example core yojson atdgen))
+
+(rule
+  (targets hello_j.ml hello_j.mli)
+  (deps    hello.atd)
+  (mode    fallback)
+  (action  (run atdgen -j %{deps})))
+
+(rule
+  (targets hello_t.ml hello_t.mli)
+  (deps    hello.atd)
+  (mode    fallback)
+  (action  (run atdgen -t %{deps})))
+
