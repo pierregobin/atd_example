@@ -4,3 +4,9 @@ month : int;
 day : int;
 }
 
+type vector_v1 = {
+x : int;
+~y : int;
+z: int option;
+}
+
