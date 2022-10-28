@@ -12,3 +12,6 @@ let () =
         printf "v=%s\n" (Hello_j.string_of_vector_v1 v);
         printf "w=%s\n" (Hello_j.string_of_vector_v1 w)
 
+let () = 
+         let f1 = {name="Harry Potter"; d={year=2000; month=4; day = 6}; author = None;actors = []} in 
+         printf "f1=%s\n" (Hello_j.string_of_film f1)

@@ -10,3 +10,9 @@ x : int;
 z: int option;
 }
 
+type film = {
+name : string;
+d    : date;
+author : string option;
+actors : string list;
+}
